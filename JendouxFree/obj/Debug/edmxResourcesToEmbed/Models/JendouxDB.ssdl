@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_9ACB12_jendouxDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DB_9ACB12_jendouxDBModelStoreContainer">
+    <EntitySet Name="Query" EntityType="DB_9ACB12_jendouxDBModel.Store.Query" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserProfile" EntityType="DB_9ACB12_jendouxDBModel.Store.UserProfile" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__Query__UserProfi__25869641" Association="DB_9ACB12_jendouxDBModel.Store.FK__Query__UserProfi__25869641">
+      <End Role="UserProfile" EntitySet="UserProfile" />
+      <End Role="Query" EntitySet="Query" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Query">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Url" Type="nvarchar" Nullable="false" MaxLength="2048" />
+    <Property Name="Time" Type="datetime" Nullable="false" />
+    <Property Name="UserProfileId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreateAt" Type="datetime" Nullable="false" />
+    <Property Name="Visits" Type="int" Nullable="false" />
+    <Property Name="Location" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserAgent" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="Mode" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="FlashSpeed" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="SlideSpeed" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="RollSpeed" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="WordNum" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="RowNum" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="Threshold" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="FontSize" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="Font" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="LineHeight" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="Theme" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="HighLight" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="Volume" Type="varchar" Nullable="false" MaxLength="4" />
+  </EntityType>
+  <Association Name="FK__Query__UserProfi__25869641">
+    <End Role="UserProfile" Type="DB_9ACB12_jendouxDBModel.Store.UserProfile" Multiplicity="1" />
+    <End Role="Query" Type="DB_9ACB12_jendouxDBModel.Store.Query" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserProfile">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Query">
+        <PropertyRef Name="UserProfileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

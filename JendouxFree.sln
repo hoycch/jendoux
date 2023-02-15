@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JendouxFree", "JendouxFree\JendouxFree.csproj", "{C1041756-9DFB-4A2F-962F-677743FC840D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JendouxMin", "JendouxMin\JendouxMin.csproj", "{E5A09F97-245D-4122-B0FF-8E220C1A7973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeedTest", "SpeedTest\SpeedTest.csproj", "{2A39760D-6C82-4A01-BD02-6F4831F34F19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JendouxPortal", "JendouxPortal\JendouxPortal.csproj", "{5F0992FC-282E-41A4-9B0E-15ADE941400E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1041756-9DFB-4A2F-962F-677743FC840D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1041756-9DFB-4A2F-962F-677743FC840D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1041756-9DFB-4A2F-962F-677743FC840D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1041756-9DFB-4A2F-962F-677743FC840D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5A09F97-245D-4122-B0FF-8E220C1A7973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5A09F97-245D-4122-B0FF-8E220C1A7973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5A09F97-245D-4122-B0FF-8E220C1A7973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5A09F97-245D-4122-B0FF-8E220C1A7973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A39760D-6C82-4A01-BD02-6F4831F34F19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A39760D-6C82-4A01-BD02-6F4831F34F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A39760D-6C82-4A01-BD02-6F4831F34F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A39760D-6C82-4A01-BD02-6F4831F34F19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F0992FC-282E-41A4-9B0E-15ADE941400E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F0992FC-282E-41A4-9B0E-15ADE941400E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F0992FC-282E-41A4-9B0E-15ADE941400E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F0992FC-282E-41A4-9B0E-15ADE941400E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

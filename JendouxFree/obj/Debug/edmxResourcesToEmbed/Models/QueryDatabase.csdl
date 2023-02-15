@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Query" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="QueryContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Queries" EntityType="Query.Query" />
+    <EntitySet Name="UserProfiles" EntityType="Query.UserProfile" />
+    <EntitySet Name="Settings" EntityType="Query.Settings" />
+    <AssociationSet Name="UserProfileQuery" Association="Query.UserProfileQuery">
+      <End Role="UserProfile" EntitySet="UserProfiles" />
+      <End Role="Query" EntitySet="Queries" />
+    </AssociationSet>
+    <AssociationSet Name="UserProfileSettings" Association="Query.UserProfileSettings">
+      <End Role="UserProfile" EntitySet="UserProfiles" />
+      <End Role="Settings" EntitySet="Settings" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Query">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="QueryString" Nullable="false" />
+    <NavigationProperty Name="UserProfile" Relationship="Query.UserProfileQuery" FromRole="Query" ToRole="UserProfile" />
+    <Property Type="Int32" Name="UserProfileId" Nullable="false" />
+    <Property Type="DateTime" Name="Time" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="IP" Nullable="false" />
+    <Property Type="String" Name="Location" Nullable="false" />
+    <Property Type="String" Name="UserAgent" Nullable="false" />
+    <Property Type="String" Name="Visits" Nullable="false" />
+    <NavigationProperty Name="Queries" Relationship="Query.UserProfileQuery" FromRole="UserProfile" ToRole="Query" />
+    <NavigationProperty Name="Setting" Relationship="Query.UserProfileSettings" FromRole="UserProfile" ToRole="Settings" />
+  </EntityType>
+  <EntityType Name="Settings">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="UserProfile" Relationship="Query.UserProfileSettings" FromRole="Settings" ToRole="UserProfile" />
+    <Property Type="String" Name="FlashSpeed" Nullable="false" />
+    <Property Type="String" Name="SlideSpeed" Nullable="false" />
+    <Property Type="String" Name="WordNum" Nullable="false" />
+    <Property Type="String" Name="RowNum" Nullable="false" />
+    <Property Type="String" Name="Threshold" Nullable="false" />
+    <Property Type="String" Name="FontSize" Nullable="false" />
+    <Property Type="String" Name="Font" Nullable="false" />
+    <Property Type="String" Name="LineHeight" Nullable="false" />
+    <Property Type="String" Name="Theme" Nullable="false" />
+    <Property Type="String" Name="HighLight" Nullable="false" />
+    <Property Type="String" Name="Volume" Nullable="false" />
+  </EntityType>
+  <Association Name="UserProfileQuery">
+    <End Type="Query.UserProfile" Role="UserProfile" Multiplicity="1" />
+    <End Type="Query.Query" Role="Query" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserProfile">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Query">
+        <PropertyRef Name="UserProfileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserProfileSettings">
+    <End Type="Query.UserProfile" Role="UserProfile" Multiplicity="1" />
+    <End Type="Query.Settings" Role="Settings" Multiplicity="1" />
+  </Association>
+</Schema>

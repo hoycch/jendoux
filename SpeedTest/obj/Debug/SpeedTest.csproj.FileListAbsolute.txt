@@ -1,0 +1,48 @@
+E:\My Documents\OneDrive\JendouxFree\SpeedTest\bin\Debug\SpeedTest.dll
+E:\My Documents\OneDrive\JendouxFree\SpeedTest\bin\Debug\SpeedTest.pdb
+E:\My Documents\OneDrive\JendouxFree\SpeedTest\bin\Debug\JendouxFree.dll
+E:\My Documents\OneDrive\JendouxFree\SpeedTest\bin\Debug\xunit.dll
+E:\My Documents\OneDrive\JendouxFree\SpeedTest\bin\Debug\AjaxControlToolkit.dll
+E:\My Documents\OneDrive\JendouxFree\SpeedTest\bin\Debug\AjaxMin.dll
+E:\My Documents\OneDrive\JendouxFree\SpeedTest\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+E:\My Documents\OneDrive\JendouxFree\SpeedTest\bin\Debug\JendouxFree.pdb
+E:\My Documents\OneDrive\JendouxFree\SpeedTest\bin\Debug\xunit.xml
+E:\My Documents\OneDrive\JendouxFree\SpeedTest\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+E:\My Documents\OneDrive\JendouxFree\SpeedTest\obj\Debug\SpeedTest.csprojResolveAssemblyReference.cache
+E:\My Documents\OneDrive\JendouxFree\SpeedTest\obj\Debug\SpeedTest.dll
+E:\My Documents\OneDrive\JendouxFree\SpeedTest\obj\Debug\SpeedTest.pdb
+E:\My Documents\OneDrive\JendouxFree\SpeedTest\bin\Debug\CsQuery.dll
+E:\My Documents\OneDrive\JendouxFree\SpeedTest\bin\Debug\CsQuery.xml
+F:\Backup\JendouxFree\SpeedTest\bin\Debug\SpeedTest.dll
+F:\Backup\JendouxFree\SpeedTest\bin\Debug\SpeedTest.pdb
+F:\Backup\JendouxFree\SpeedTest\bin\Debug\CsQuery.dll
+F:\Backup\JendouxFree\SpeedTest\bin\Debug\JendouxFree.dll
+F:\Backup\JendouxFree\SpeedTest\bin\Debug\xunit.dll
+F:\Backup\JendouxFree\SpeedTest\bin\Debug\AjaxControlToolkit.dll
+F:\Backup\JendouxFree\SpeedTest\bin\Debug\AjaxMin.dll
+F:\Backup\JendouxFree\SpeedTest\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+F:\Backup\JendouxFree\SpeedTest\bin\Debug\JendouxFree.pdb
+F:\Backup\JendouxFree\SpeedTest\bin\Debug\CsQuery.xml
+F:\Backup\JendouxFree\SpeedTest\bin\Debug\xunit.xml
+F:\Backup\JendouxFree\SpeedTest\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+F:\Backup\JendouxFree\SpeedTest\obj\Debug\SpeedTest.csprojResolveAssemblyReference.cache
+F:\Backup\JendouxFree\SpeedTest\obj\Debug\SpeedTest.dll
+F:\Backup\JendouxFree\SpeedTest\obj\Debug\SpeedTest.pdb
+D:\My Documents\Programming work\JendouxFree\SpeedTest\bin\Debug\SpeedTest.dll
+D:\My Documents\Programming work\JendouxFree\SpeedTest\bin\Debug\SpeedTest.pdb
+D:\My Documents\Programming work\JendouxFree\SpeedTest\bin\Debug\CsQuery.dll
+D:\My Documents\Programming work\JendouxFree\SpeedTest\bin\Debug\JendouxFree.dll
+D:\My Documents\Programming work\JendouxFree\SpeedTest\bin\Debug\xunit.dll
+D:\My Documents\Programming work\JendouxFree\SpeedTest\bin\Debug\AjaxControlToolkit.dll
+D:\My Documents\Programming work\JendouxFree\SpeedTest\bin\Debug\AjaxMin.dll
+D:\My Documents\Programming work\JendouxFree\SpeedTest\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+D:\My Documents\Programming work\JendouxFree\SpeedTest\bin\Debug\JendouxFree.pdb
+D:\My Documents\Programming work\JendouxFree\SpeedTest\bin\Debug\JendouxFree.dll.config
+D:\My Documents\Programming work\JendouxFree\SpeedTest\bin\Debug\CsQuery.xml
+D:\My Documents\Programming work\JendouxFree\SpeedTest\bin\Debug\xunit.xml
+D:\My Documents\Programming work\JendouxFree\SpeedTest\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+D:\My Documents\Programming work\JendouxFree\SpeedTest\obj\Debug\SpeedTest.csprojAssemblyReference.cache
+D:\My Documents\Programming work\JendouxFree\SpeedTest\obj\Debug\SpeedTest.csproj.CoreCompileInputs.cache
+D:\My Documents\Programming work\JendouxFree\SpeedTest\obj\Debug\SpeedTest.csproj.CopyComplete
+D:\My Documents\Programming work\JendouxFree\SpeedTest\obj\Debug\SpeedTest.dll
+D:\My Documents\Programming work\JendouxFree\SpeedTest\obj\Debug\SpeedTest.pdb

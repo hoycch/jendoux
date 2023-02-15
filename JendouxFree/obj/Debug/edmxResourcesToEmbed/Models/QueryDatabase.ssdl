@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Query.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="QueryStoreContainer">
+    <EntitySet Name="Queries" EntityType="Query.Store.Queries" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserProfiles" EntityType="Query.Store.UserProfiles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Settings" EntityType="Query.Store.Settings" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="UserProfileQuery" Association="Query.Store.UserProfileQuery">
+      <End Role="UserProfile" EntitySet="UserProfiles" />
+      <End Role="Query" EntitySet="Queries" />
+    </AssociationSet>
+    <AssociationSet Name="UserProfileSettings" Association="Query.Store.UserProfileSettings">
+      <End Role="UserProfile" EntitySet="UserProfiles" />
+      <End Role="Settings" EntitySet="Settings" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Queries">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QueryString" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserProfileId" Type="int" Nullable="false" />
+    <Property Name="Time" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserProfiles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IP" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Location" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserAgent" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Visits" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Setting_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Settings">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FlashSpeed" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SlideSpeed" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="WordNum" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RowNum" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Threshold" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FontSize" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Font" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LineHeight" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Theme" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="HighLight" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Volume" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="UserProfileQuery">
+    <End Role="UserProfile" Type="Query.Store.UserProfiles" Multiplicity="1" />
+    <End Role="Query" Type="Query.Store.Queries" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserProfile">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Query">
+        <PropertyRef Name="UserProfileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserProfileSettings">
+    <End Role="UserProfile" Type="Query.Store.UserProfiles" Multiplicity="*" />
+    <End Role="Settings" Type="Query.Store.Settings" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Settings">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserProfile">
+        <PropertyRef Name="Setting_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

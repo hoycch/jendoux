@@ -1,0 +1,25 @@
+E:\My Documents\SkyDrive\JendouxFree\JendouxMin\bin\Debug\JendouxMin.exe.config
+E:\My Documents\SkyDrive\JendouxFree\JendouxMin\bin\Debug\JendouxMin.exe
+E:\My Documents\SkyDrive\JendouxFree\JendouxMin\bin\Debug\JendouxMin.pdb
+E:\My Documents\SkyDrive\JendouxFree\JendouxMin\obj\Debug\JendouxMin.csprojResolveAssemblyReference.cache
+E:\My Documents\SkyDrive\JendouxFree\JendouxMin\obj\Debug\JendouxMin.exe
+E:\My Documents\SkyDrive\JendouxFree\JendouxMin\obj\Debug\JendouxMin.pdb
+E:\My Documents\OneDrive\JendouxFree\JendouxMin\bin\Debug\JendouxMin.exe.config
+E:\My Documents\OneDrive\JendouxFree\JendouxMin\bin\Debug\JendouxMin.exe
+E:\My Documents\OneDrive\JendouxFree\JendouxMin\bin\Debug\JendouxMin.pdb
+E:\My Documents\OneDrive\JendouxFree\JendouxMin\obj\Debug\JendouxMin.csprojResolveAssemblyReference.cache
+E:\My Documents\OneDrive\JendouxFree\JendouxMin\obj\Debug\JendouxMin.exe
+E:\My Documents\OneDrive\JendouxFree\JendouxMin\obj\Debug\JendouxMin.pdb
+F:\Backup\JendouxFree\JendouxMin\bin\Debug\JendouxMin.exe.config
+F:\Backup\JendouxFree\JendouxMin\bin\Debug\JendouxMin.exe
+F:\Backup\JendouxFree\JendouxMin\bin\Debug\JendouxMin.pdb
+F:\Backup\JendouxFree\JendouxMin\obj\Debug\JendouxMin.csprojResolveAssemblyReference.cache
+F:\Backup\JendouxFree\JendouxMin\obj\Debug\JendouxMin.exe
+F:\Backup\JendouxFree\JendouxMin\obj\Debug\JendouxMin.pdb
+D:\My Documents\Programming work\JendouxFree\JendouxMin\bin\Debug\JendouxMin.exe.config
+D:\My Documents\Programming work\JendouxFree\JendouxMin\bin\Debug\JendouxMin.exe
+D:\My Documents\Programming work\JendouxFree\JendouxMin\bin\Debug\JendouxMin.pdb
+D:\My Documents\Programming work\JendouxFree\JendouxMin\obj\Debug\JendouxMin.csprojAssemblyReference.cache
+D:\My Documents\Programming work\JendouxFree\JendouxMin\obj\Debug\JendouxMin.csproj.CoreCompileInputs.cache
+D:\My Documents\Programming work\JendouxFree\JendouxMin\obj\Debug\JendouxMin.exe
+D:\My Documents\Programming work\JendouxFree\JendouxMin\obj\Debug\JendouxMin.pdb

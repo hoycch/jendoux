@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdjustSpeed" xml:space="preserve">
+    <value>&lt;strong&gt;Adjust Play Speed&lt;/strong&gt;
+    &lt;p&gt;
+        1. &amp;lt;Use Setting Panel&amp;gt;
+        &lt;br /&gt;
+        Open Setting Panel &amp;#8594; Speed Tab
+        &lt;br /&gt;
+        Drag slider or Click Plus/Minus Button to get the desired value.
+        &lt;br /&gt;
+        &lt;br /&gt;
+
+        2. &amp;lt;Roll Mouse Wheel&amp;gt;
+        &lt;br /&gt;
+        Hover mouse on words/speed text strip, roll mouse wheel.
+        &lt;br /&gt;
+        Roll up to speed up; roll down to speed down.&lt;br /&gt;
+        &lt;small&gt;Note: Speed set by the mouse wheel is temporary. The value will not be remembered for next time. To remember the value, open and close the setting panel once.&lt;/small&gt;
+
+        &lt;br /&gt;
+        &lt;br /&gt;
+        3. &amp;lt;Use Keyboard Shortcuts&amp;gt;&lt;br /&gt;
+
+After a player start playing, then press,(Comma) or .(Dot) to decrease or increase
+    &lt;/p&gt;
+&lt;iframe width="427" height="240" src="//www.youtube.com/embed/5Vd_PFGwr0k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</value>
+  </data>
+  <data name="ChangeMode" xml:space="preserve">
+    <value>&lt;strong&gt;Change Individual Player Mode&lt;/strong&gt;
+    &lt;p&gt;
+        1. &amp;lt;Left-Click Player Mode Button&amp;gt;&lt;br /&gt;
+        The player will change from
+        &lt;br /&gt;
+        Flash Mode &amp;#8594; Slide Mode &amp;#8594; Text Mode
+    &lt;/p&gt;
+    &lt;p&gt;
+        2. &amp;lt;Right-click Player Mode Button&amp;gt;&lt;br /&gt;
+        The player will change from
+        &lt;br /&gt;
+        Slide Mode &amp;#8594; Flash Mode &amp;#8594; Text Mode
+    &lt;/p&gt;
+    &lt;p&gt;
+        3. &amp;lt;Middle-click text area&amp;gt;&lt;br /&gt;
+        The player will cycle through
+        &lt;br /&gt;
+        Flash Mode &amp;#8594; Slide Mode &amp;#8594; Text Mode &amp;#8594; ...
+    &lt;/p&gt;
+    &lt;iframe width="427" height="240" src="//www.youtube.com/embed/pItJt0QFDV4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</value>
+  </data>
+  <data name="DropText" xml:space="preserve">
+    <value>&lt;strong&gt;Speed Read Random Text&lt;/strong&gt;
+    &lt;p&gt;You may highlight text in a page and drag it to Drop Text button. A new text player will be created.&lt;/p&gt;
+    &lt;p&gt;Moreover, you may paste text copied from other souces to create players.&lt;/p&gt;
+    &lt;iframe width="427" height="240" src="//www.youtube.com/embed/ye9ZhvpAnk4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</value>
+  </data>
+  <data name="Navigate" xml:space="preserve">
+    <value>&lt;strong&gt;Advance/Rewind Text&lt;/strong&gt;
+    &lt;p&gt;
+        1. &amp;lt;Click Last/Next Button&amp;gt;&lt;br /&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+        2. &amp;lt;Roll Mouse Wheel&amp;gt;&lt;br /&gt;
+        Hover mouse on text area.
+        &lt;br /&gt;
+        Roll up or down mouse wheel to advance/rewind.
+    &lt;/p&gt;
+    &lt;p&gt;
+        3. &amp;lt;Press Right/Left Key&amp;gt;&lt;br /&gt;
+        Play the text first to notify the application which player to control.
+        &lt;br /&gt;
+        Press  &amp;#8592; / &amp;#8594; to rewind/advance
+    &lt;/p&gt;
+&lt;iframe width="427" height="240" src="//www.youtube.com/embed/3grB47y3Y6o" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</value>
+  </data>
+  <data name="Font" xml:space="preserve">
+    <value>&lt;strong&gt;Change Font in Text Player&lt;/strong&gt;
+    &lt;p&gt;
+        Open Settings Panel &amp;#8594; Text Display Tab.&lt;br /&gt;
+        Choose desired font from Font Option. (Keyboard Shortcut: Ctrl+/)
+    &lt;/p&gt;
+&lt;iframe width="427" height="240" src="//www.youtube.com/embed/UN6kyyGSjOs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>&lt;strong&gt;Change Font Size in Text Player&lt;/strong&gt;
+    &lt;p&gt;
+        Open Settings Panel &amp;#8594; Text Display Tab. &lt;br /&gt;
+        Adjust Font Size to the desired value.&lt;/p&gt;&lt;p&gt;
+        Keyboard Shortcuts: &lt;br /&gt;Hold Ctrl, press - or = to decrease or increase.
+    &lt;/p&gt;
+&lt;iframe width="427" height="240" src="//www.youtube.com/embed/AiDMOz9F00g" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</value>
+  </data>
+  <data name="LineHeight" xml:space="preserve">
+    <value>&lt;strong&gt;Change Line Spacing in Text Player&lt;/strong&gt;
+    &lt;p&gt;
+        Open Settings Panel &amp;#8594; Text Display Tab. &lt;br /&gt;
+        Adjust Line Spacing to the desired value.
+    &lt;/p&gt;
+    &lt;p&gt;
+        Keyboard Shortcuts:
+        &lt;br /&gt;
+        Hold Alt, press - or = to decrease or increase.
+    &lt;/p&gt;
+    &lt;img src="Images/ShowTip/en/LineHeight.gif" /&gt;</value>
+  </data>
+  <data name="ParallelReading" xml:space="preserve">
+    <value>&lt;strong&gt;Parallel Reading Pane&lt;/strong&gt;
+    &lt;p&gt;
+        Click Parallel Reading Button to get the text pane.
+    &lt;/p&gt;
+    &lt;p&gt;
+        You can freely resize and reposition the pane.
+    &lt;/p&gt;
+    &lt;p&gt;
+        Double click anywhere in the pane will close the pane
+    &lt;/p&gt;
+    &lt;img src="Images/ShowTip/en/ParallelReading.gif" /&gt;</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>&lt;strong&gt;Play/Pause&lt;/strong&gt;
+    &lt;p&gt;
+        1. &amp;lt;Click Play/Pause Button&amp;gt;&lt;br /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        2. &amp;lt;Click on Text&amp;gt;&lt;br /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        3. &amp;lt;Press Space Key&amp;gt;&lt;br /&gt;
+        In order to notify the system the active player, the player has to be played once.
+    &lt;/p&gt;
+&lt;iframe width="427" height="240" src="//www.youtube.com/embed/gs5Ho2rPZ4A" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</value>
+  </data>
+  <data name="PlayerSize" xml:space="preserve">
+    <value>&lt;strong&gt;Adjust Player Size&lt;/strong&gt;
+    &lt;p&gt;
+      1. &amp;lt;Use Settings Panel&amp;gt;&lt;br /&gt;
+        Open Setting Panel &amp;#8594; Content Size. &lt;br /&gt;
+        Adjust Words/Line and Rows options to desired values.
+    &lt;/p&gt;
+    &lt;p&gt;
+        2. &amp;lt;Drag Resize Handle&amp;gt;&lt;br /&gt;
+        Hover Mouse on Resize Handler which is hidden in right bottom of the text.&lt;br /&gt;
+        Drag the handle until the text pane reaches desired size.
+    &lt;/p&gt;
+    &lt;p&gt;
+        3. &amp;lt;Use Keyboard Shortcuts&amp;gt;&lt;br /&gt;
+        Hold Ctrl, Press &amp;#8592; or &amp;#8594; to decrease/increase words per line. &lt;br /&gt;
+        Hold Ctrl, Press &amp;#8593; or &amp;#8595; to decrease/increase lines
+    &lt;/p&gt;
+&lt;iframe width="427" height="240" src="//www.youtube.com/embed/_oJocsXwjw0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</value>
+  </data>
+  <data name="PlayMode" xml:space="preserve">
+    <value>&lt;strong&gt;Display Mode&lt;/strong&gt;
+    &lt;p&gt;
+        &amp;lt;Left click&amp;gt;&lt;br /&gt;
+        Cycle through Flash Mode &amp;#8594; Slide Mode &amp;#8594; Document&lt;/p&gt;
+    &lt;p&gt;
+        &amp;lt;Right Click&amp;gt;&lt;br /&gt;
+        Reverse the cycle&lt;/p&gt;
+    &lt;img src="Images/ShowTip/en/MSB_Mode.gif" /&gt;</value>
+  </data>
+  <data name="QueryTextBox" xml:space="preserve">
+    <value>&lt;strong&gt;Query Textbox&lt;/strong&gt;
+    &lt;p&gt;This is how your speed read a webpage&lt;/p&gt;
+    &lt;p&gt;
+        Hold &lt;i&gt;Alt&lt;/i&gt; and Press &lt;i&gt;Q&lt;/i&gt; or &lt;i&gt;0&lt;/i&gt;, to move the cursor to this box.
+    &lt;/p&gt;
+    &lt;p&gt;
+        You may enter some key words you want to search or a hyperlink
+    &lt;/p&gt;
+    &lt;p&gt;
+        Then press enter key or click the search button on the right hand side.
+    &lt;/p&gt;
+    &lt;sub&gt;Keyboard shortcuts do not work when text cursor is in Query Textbox&lt;/sub&gt;
+    &lt;iframe width="427" height="240" src="//www.youtube.com/embed/tdBX-3us2jY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>&lt;strong&gt;Reset the player&lt;/strong&gt;
+    &lt;p&gt;
+        1. &amp;lt;Click Stop Button&amp;gt;&lt;br /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        2. &amp;lt;Right-click on Text&amp;gt;&lt;br /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        3. &amp;lt;Press Backspace Key&amp;gt;&lt;br /&gt;
+        In order to notify the system the active player, the player has to be played once.
+    &lt;/p&gt;
+&lt;iframe width="427" height="240" src="//www.youtube.com/embed/sy5lw8tXsoU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</value>
+  </data>
+  <data name="SearchButton" xml:space="preserve">
+    <value>&lt;strong&gt;Search Button&lt;/strong&gt;
+    &lt;p&gt;
+        &amp;lt;Left click&amp;gt;&lt;br /&gt;
+        Take you to the destination page via Jendoux.
+    &lt;/p&gt;
+    &lt;p&gt;
+        &amp;lt;Middle click&amp;gt;&lt;br /&gt;
+        Open the destination page in a new tab.
+        &lt;small&gt;Pop Up function has to be enabled&lt;/small&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &amp;lt;Right click&amp;gt;&lt;br /&gt;
+        Take you to the destination page directly
+    &lt;/p&gt;
+    &lt;iframe width="427" height="240" src="//www.youtube.com/embed/VoZFYIMlnz8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>&lt;strong&gt;Change Theme Colours&lt;/strong&gt;
+    &lt;p&gt;
+        &amp;lt;Theme&amp;gt;&lt;br /&gt;
+Open Setting Panel &amp;#8594; Environment Tab (keyboard shortcut: Alt + /) to select the desired Application Theme.
+    &lt;/p&gt;
+    &lt;p&gt;
+        &amp;lt;Highlight Colour&amp;gt;&lt;br /&gt;
+        Click colour palette button and choose the desired highlight colour.
+    &lt;/p&gt;
+&lt;iframe width="427" height="240" src="//www.youtube.com/embed/caYsZwXaYFE" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</value>
+  </data>
+  <data name="Threshold" xml:space="preserve">
+    <value>&lt;strong&gt;Filter out Short Paragraphs&lt;/strong&gt;
+    &lt;p&gt;
+        You can filter out paragraphs with fewer text not to be playerised.
+    &lt;/p&gt;
+    &lt;p&gt;
+        Open Settings Panel &amp;#8594; Content Size.&lt;br /&gt;
+        Adjust to desired value.
+    &lt;/p&gt;
+    &lt;p&gt;
+        Keyboard Shortcuts: Hold Ctrl, Press Page Up or Page Down Key to increase or decrease.&lt;br /&gt;
+        This shortcut does not work in Chrome.
+        &lt;br /&gt;
+    &lt;/p&gt;
+    &lt;img src="Images/ShowTip/en/Threshold.gif" /&gt;</value>
+  </data>
+  <data name="Volume" xml:space="preserve">
+    <value>&lt;strong&gt;Adjust Volume of Sound Effects&lt;/strong&gt;
+    &lt;p&gt;
+        Open Settings Panel &amp;#8594; Environment Tab. &lt;br /&gt;
+        Adjust Volume to the desired value.
+    &lt;/p&gt;
+    &lt;p&gt;
+        Keyboard Shortcuts:
+        &lt;br /&gt;
+        Hold Ctrl, press Page Down or Page Up to decrease or increase.
+    &lt;/p&gt;
+    &lt;img src="Images/ShowTip/en/Volume.gif" /&gt;</value>
+  </data>
+</root>

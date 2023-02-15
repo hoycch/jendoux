@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DB_9ACB12_jendouxDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="DB_9ACB12_jendouxDBModelStoreContainer">
+          <EntitySet Name="Query" EntityType="DB_9ACB12_jendouxDBModel.Store.Query" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserProfile" EntityType="DB_9ACB12_jendouxDBModel.Store.UserProfile" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__Query__UserProfi__25869641" Association="DB_9ACB12_jendouxDBModel.Store.FK__Query__UserProfi__25869641">
+            <End Role="UserProfile" EntitySet="UserProfile" />
+            <End Role="Query" EntitySet="Query" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Query">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Url" Type="nvarchar" Nullable="false" MaxLength="2048" />
+          <Property Name="Time" Type="datetime" Nullable="false" />
+          <Property Name="UserProfileId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserProfile">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CreateAt" Type="datetime" Nullable="false" />
+          <Property Name="Visits" Type="int" Nullable="false" />
+          <Property Name="Location" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="UserAgent" Type="varchar" Nullable="false" MaxLength="300" />
+          <Property Name="Mode" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="FlashSpeed" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="SlideSpeed" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="RollSpeed" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="WordNum" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="RowNum" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="Threshold" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="FontSize" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="Font" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="LineHeight" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="Theme" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="HighLight" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="Volume" Type="varchar" Nullable="false" MaxLength="4" />
+        </EntityType>
+        <Association Name="FK__Query__UserProfi__25869641">
+          <End Role="UserProfile" Type="DB_9ACB12_jendouxDBModel.Store.UserProfile" Multiplicity="1" />
+          <End Role="Query" Type="DB_9ACB12_jendouxDBModel.Store.Query" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserProfile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Query">
+              <PropertyRef Name="UserProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DB_9ACB12_jendouxDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="DB_9ACB12_jendouxDBEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Queries" EntityType="DB_9ACB12_jendouxDBModel.Query" />
+          <EntitySet Name="UserProfiles" EntityType="DB_9ACB12_jendouxDBModel.UserProfile" />
+          <AssociationSet Name="FK__Query__UserProfi__25869641" Association="DB_9ACB12_jendouxDBModel.FK__Query__UserProfi__25869641">
+            <End Role="UserProfile" EntitySet="UserProfiles" />
+            <End Role="Query" EntitySet="Queries" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Query">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Url" Type="String" Nullable="false" MaxLength="2048" Unicode="true" FixedLength="false" />
+          <Property Name="Time" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UserProfileId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="UserProfile" Relationship="DB_9ACB12_jendouxDBModel.FK__Query__UserProfi__25869641" FromRole="Query" ToRole="UserProfile" />
+        </EntityType>
+        <EntityType Name="UserProfile">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="CreateAt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Visits" Type="Int32" Nullable="false" />
+          <Property Name="Location" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="UserAgent" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="Mode" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="FlashSpeed" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="SlideSpeed" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="RollSpeed" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="WordNum" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="RowNum" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="Threshold" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="FontSize" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="Font" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="LineHeight" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="Theme" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="HighLight" Type="String" Nullable="false" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="Volume" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Queries" Relationship="DB_9ACB12_jendouxDBModel.FK__Query__UserProfi__25869641" FromRole="UserProfile" ToRole="Query" />
+        </EntityType>
+        <Association Name="FK__Query__UserProfi__25869641">
+          <End Role="UserProfile" Type="DB_9ACB12_jendouxDBModel.UserProfile" Multiplicity="1" />
+          <End Role="Query" Type="DB_9ACB12_jendouxDBModel.Query" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserProfile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Query">
+              <PropertyRef Name="UserProfileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DB_9ACB12_jendouxDBModelStoreContainer" CdmEntityContainer="DB_9ACB12_jendouxDBEntities">
+          <EntitySetMapping Name="Queries">
+            <EntityTypeMapping TypeName="DB_9ACB12_jendouxDBModel.Query">
+              <MappingFragment StoreEntitySet="Query">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="UserProfileId" ColumnName="UserProfileId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserProfiles">
+            <EntityTypeMapping TypeName="DB_9ACB12_jendouxDBModel.UserProfile">
+              <MappingFragment StoreEntitySet="UserProfile">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CreateAt" ColumnName="CreateAt" />
+                <ScalarProperty Name="Visits" ColumnName="Visits" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="UserAgent" ColumnName="UserAgent" />
+                <ScalarProperty Name="Mode" ColumnName="Mode" />
+                <ScalarProperty Name="FlashSpeed" ColumnName="FlashSpeed" />
+                <ScalarProperty Name="SlideSpeed" ColumnName="SlideSpeed" />
+                <ScalarProperty Name="RollSpeed" ColumnName="RollSpeed" />
+                <ScalarProperty Name="WordNum" ColumnName="WordNum" />
+                <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+                <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+                <ScalarProperty Name="FontSize" ColumnName="FontSize" />
+                <ScalarProperty Name="Font" ColumnName="Font" />
+                <ScalarProperty Name="LineHeight" ColumnName="LineHeight" />
+                <ScalarProperty Name="Theme" ColumnName="Theme" />
+                <ScalarProperty Name="HighLight" ColumnName="HighLight" />
+                <ScalarProperty Name="Volume" ColumnName="Volume" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Default" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

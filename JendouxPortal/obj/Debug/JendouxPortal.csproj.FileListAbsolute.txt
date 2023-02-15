@@ -1,0 +1,17 @@
+E:\My Documents\OneDrive\JendouxFree\JendouxPortal\bin\JendouxPortal.dll
+E:\My Documents\OneDrive\JendouxFree\JendouxPortal\bin\JendouxPortal.pdb
+E:\My Documents\OneDrive\JendouxFree\JendouxPortal\obj\Debug\JendouxPortal.csprojResolveAssemblyReference.cache
+E:\My Documents\OneDrive\JendouxFree\JendouxPortal\obj\Debug\JendouxPortal.dll
+E:\My Documents\OneDrive\JendouxFree\JendouxPortal\obj\Debug\JendouxPortal.pdb
+F:\Backup\JendouxFree\JendouxPortal\bin\JendouxPortal.dll
+F:\Backup\JendouxFree\JendouxPortal\bin\JendouxPortal.pdb
+F:\Backup\JendouxFree\JendouxPortal\obj\Debug\JendouxPortal.csprojResolveAssemblyReference.cache
+F:\Backup\JendouxFree\JendouxPortal\obj\Debug\JendouxPortal.dll
+F:\Backup\JendouxFree\JendouxPortal\obj\Debug\JendouxPortal.pdb
+D:\My Documents\Programming work\JendouxFree\JendouxPortal\bin\JendouxPortal.dll.config
+D:\My Documents\Programming work\JendouxFree\JendouxPortal\bin\JendouxPortal.dll
+D:\My Documents\Programming work\JendouxFree\JendouxPortal\bin\JendouxPortal.pdb
+D:\My Documents\Programming work\JendouxFree\JendouxPortal\obj\Debug\JendouxPortal.csprojAssemblyReference.cache
+D:\My Documents\Programming work\JendouxFree\JendouxPortal\obj\Debug\JendouxPortal.csproj.CoreCompileInputs.cache
+D:\My Documents\Programming work\JendouxFree\JendouxPortal\obj\Debug\JendouxPortal.dll
+D:\My Documents\Programming work\JendouxFree\JendouxPortal\obj\Debug\JendouxPortal.pdb
